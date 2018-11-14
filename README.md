@@ -9,6 +9,11 @@ file for more details.
 [1]: https://chemics.github.io
 [2]: https://github.com/chemics/chemics
 
+### gas_density.py
+
+Calculate the density of a gas based on its molecular weight, pressure, and
+temperature.
+
 ### gas_viscosity.py
 
 Determine viscosity of a gas at temperature or for a range of temperatures.
