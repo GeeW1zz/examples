@@ -12,6 +12,11 @@ import numpy as np
 
 mu_n2 = cm.mu_gas('N2', 773.15)
 
+# Determine viscosity of a gas mixture
+# ----------------------------------------------------------------------------
+
+mu_mix = cm.mu_gas_mix(['H2', 'N2', 'CH4'], 773.15, [0.4, 0.1, 0.5])
+
 # Use coefficients to plot viscosity for range of temperatures [K]
 # ----------------------------------------------------------------------------
 
@@ -30,6 +35,7 @@ mu_ch4_tk = a + b * tk + c * (tk**2) + d * (tk**3)
 
 print(f'mu_n2 = {mu_n2:.2f} micropoise')
 print(f'mu_n2 = {mu_n2/1e7:.5g} kg/(m s)')
+print(f'mu_mix = {mu_mix:.2f} micropoise')
 
 # Plot results
 # ----------------------------------------------------------------------------
