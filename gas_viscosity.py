@@ -1,6 +1,6 @@
 """
 Determine viscosity of a gas at temperature or for a range of temperatures.
-Updated by G.W. on 11/14/2018.
+Updated by G.W. on 11/30/2018.
 """
 
 import chemics as cm
@@ -10,20 +10,20 @@ import numpy as np
 # Determine viscosity of nitrogen gas at temperature [K]
 # ----------------------------------------------------------------------------
 
-mu_n2 = cm.mu_gas_inorganic('N2', 773.15)
+mu_n2 = cm.mu_gas('N2', 773.15)
 
 # Use coefficients to plot viscosity for range of temperatures [K]
 # ----------------------------------------------------------------------------
 
-results = cm.mu_gas_organic('CH4', 833, full=True)
+results = cm.mu_gas('CH4', 833, full=True)
 
 mu_ch4 = results[0]
 tmin = results[2]
 tmax = results[3]
 a, b, c, d = results[4:]
 
-tk = np.arange(tmin, tmax+1)
-mu_ch4_tk = a + b*tk + c*(tk**2) + d*(tk**3)
+tk = np.arange(tmin, tmax + 1)
+mu_ch4_tk = a + b * tk + c * (tk**2) + d * (tk**3)
 
 # Print results
 # ----------------------------------------------------------------------------

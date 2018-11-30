@@ -1,6 +1,6 @@
 """
-Determine molecular weight of element or formula. Updated by G.W. on
-11/23/2018.
+Determine molecular weight of an element, compound, or gas mixture. Updated by
+G.W. on 11/30/2018.
 """
 
 import chemics as cm
@@ -40,3 +40,11 @@ print(f'Molecular weight of {formula} = {mw:.2f} g/mol')
 formula = '(((H2O)4)3)8'
 mw = cm.molecular_weight(formula)
 print(f'Molecular weight of {formula} = {mw:.2f} g/mol')
+
+mix = ['H2', 'N2']
+mw_mix = cm.mw_mix(mix, [0.8, 0.2])
+print(f'Molecular weight of mixture {mix} = {mw_mix:.2f} g/mol')
+
+mix = ['H2', 'N2']
+mw_mix = cm.mw_mix(mix, [0.8, 0.2])
+print(f'Molecular weight of mixture {mix} = {mw_mix:.2f} g/mol')
