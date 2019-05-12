@@ -29,6 +29,10 @@ temperature.
 
 Determine viscosity of a gas at temperature or for a range of temperatures.
 
+### geldart.py
+
+Plot the Geldart particle classification based on gas density, solid density, and mean particle diameter.
+
 ### minimum_fluidization_velocity.py
 
 Comparison of different equations to calculate the minimum fluidization velocity
