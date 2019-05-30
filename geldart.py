@@ -1,12 +1,18 @@
 """
 Plot the Geldart particle classification based on gas density, solid density,
-and mean particle diameter. Update by G.W. on 5/11/2019.
+and mean particle diameter. Update by G.W. on 5/29/2019.
 """
 
 import chemics as cm
+import matplotlib.pyplot as plt
 
 dp = 300
-rhog = 0.0012
+dpmin = 100
+dpmax = 500
+rhog = 0.1
 rhos = 2.5
 
-cm.plot_geldart(dp, rhog, rhos)
+cm.geldart_chart(dp, rhog, rhos)
+cm.geldart_chart(dp, rhog, rhos, dpmin, dpmax)
+
+plt.show()
