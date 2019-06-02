@@ -46,7 +46,7 @@ for idx, g in enumerate(G):
 
     # Punwani 1976 choking velocity
     # this will be similar to Yang 1975 at pressures near 0.075 lb/ft^3
-    _, uc_punwani = fsolve(cm.uch_punwani, [0.5, 5], (D, g, rhop, rhog*0.062427961, ut))
+    _, uc_punwani = fsolve(cm.uch_punwani, [0.5, 5], (D, g, rhop, rhog * 0.062427961, ut))
     uch_punwani[idx] = uc_punwani
 
     # PSRI 2016 choking velocity
@@ -58,12 +58,14 @@ for idx, g in enumerate(G):
 py.ion()
 py.close('all')
 
+
 def despine():
     """ remove right and top axes """
     ax = py.gca()
     ax.spines['right'].set_visible(False)
     ax.spines['top'].set_visible(False)
     py.tick_params(bottom='off', top='off', left='off', right='off')
+
 
 py.figure(1)
 py.plot(uch_leung, G, lw=2, label='Leung 1971')
@@ -86,4 +88,3 @@ py.grid(which='both')
 despine()
 
 # py.savefig('uch.pdf', bbox_inches='tight')
-

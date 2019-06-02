@@ -1,6 +1,5 @@
 """
-Determine the time for 95% devolatilization of a wood particle. Updated by G.W.
-on 3/20/19.
+Determine the time for 95% devolatilization of a wood particle.
 """
 
 import chemics as cm

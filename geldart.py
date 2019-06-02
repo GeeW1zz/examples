@@ -1,6 +1,6 @@
 """
 Plot the Geldart particle classification based on gas density, solid density,
-and mean particle diameter. Update by G.W. on 5/29/2019.
+and mean particle diameter.
 """
 
 import chemics as cm

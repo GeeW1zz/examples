@@ -1,6 +1,5 @@
 """
-Calculate gas density from molecular weight, pressure, and temperature. Updated
-by G.W. on 11/14/2018.
+Calculate gas density from molecular weight, pressure, and temperature.
 """
 
 import chemics as cm

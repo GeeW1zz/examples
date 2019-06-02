@@ -1,21 +1,22 @@
 """
 Determine viscosity of a gas at temperature or for a range of temperatures.
-Updated by G.W. on 11/30/2018.
 """
 
 import chemics as cm
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Determine viscosity of nitrogen gas at temperature [K]
+# Determine viscosity of gas at temperature [K]
 # ----------------------------------------------------------------------------
 
+mu_h2 = cm.mu_gas('H2', 773.15)
 mu_n2 = cm.mu_gas('N2', 773.15)
+mu_ch4 = cm.mu_gas('CH4', 773.15)
 
 # Determine viscosity of a gas mixture
 # ----------------------------------------------------------------------------
 
-mu_mix = cm.mu_gas_mix(['H2', 'N2', 'CH4'], 773.15, [0.4, 0.1, 0.5])
+mu_mix = cm.mu_graham([mu_h2, mu_n2, mu_ch4], [0.4, 0.1, 0.5])
 
 # Use coefficients to plot viscosity for range of temperatures [K]
 # ----------------------------------------------------------------------------
@@ -33,19 +34,17 @@ mu_ch4_tk = a + b * tk + c * (tk**2) + d * (tk**3)
 # Print results
 # ----------------------------------------------------------------------------
 
-print(f'mu_n2 = {mu_n2:.2f} micropoise')
+print(f'mu_n2 = {mu_n2:.2f} µP')
 print(f'mu_n2 = {mu_n2/1e7:.5g} kg/(m s)')
-print(f'mu_mix = {mu_mix:.2f} micropoise')
+print(f'mu_mix = {mu_mix:.2f} µP')
 
 # Plot results
 # ----------------------------------------------------------------------------
 
-plt.close('all')
-
-plt.figure()
-plt.plot(tk, mu_ch4_tk)
-plt.xlabel('Temperature [K]')
-plt.ylabel(r'Viscosity of gas [$\mu$ P]')
-plt.title(r'Plot of CH$_4$ viscosity vs temperature')
+fig, ax = plt.subplots(tight_layout=True)
+ax.plot(tk, mu_ch4_tk)
+ax.set_xlabel('Temperature [K]')
+ax.set_ylabel(r'Gas Viscosity [µP]')
+ax.set_title(r'Plot of CH$_4$ viscosity vs temperature')
 
 plt.show()
