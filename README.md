@@ -49,6 +49,10 @@ and `ut_ganser()` functions.
 Determine the transport velocity of particles in a circulating fluidized bed
 riser using the `utr()` function.
 
+### wood_thermal_conductivity.py
+
+Estimate thermal conductivity of wood based on basic specific gravity, volumetric shrinkage and moisture content.
+
 ## License
 
 Code in this repository is available under the MIT License. See the
