@@ -13,6 +13,10 @@ Example of using the `fbexp()` function to calculate the bed expansion factor to
 
 Function `ubr()` to determine the rise velocity of single bubbles in a fluidized bed.
 
+### chemical_equation.py
+
+The `ChemicalEquation` class provides product and reactant properties from a chemical reaction equation.
+
 ### gas_density.py
 
 Calculate the density of a gas based on its molecular weight, pressure, and temperature.
