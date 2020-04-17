@@ -9,6 +9,10 @@ This repository contains examples of using functions from the Chemics package fo
 
 Example of using the `fbexp()` function to calculate the bed expansion factor to estimate the expanded bed height and expanded void fraction of a bubbling fluidized bed reactor.
 
+### biomass_composition.py
+
+Estimate biomass composition from ultimate analysis. Plot results in a Matplotlib figure.
+
 ### bubble_velocity.py
 
 Function `ubr()` to determine the rise velocity of single bubbles in a fluidized bed.
