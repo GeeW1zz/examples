@@ -1,5 +1,6 @@
 """
-Determine thermal conductivity of wood.
+Estimate thermal conductivity of wood based on basic specific gravity,
+volumetric shrinkage and moisture content.
 """
 
 import chemics as cm

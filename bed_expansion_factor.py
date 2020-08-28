@@ -1,5 +1,7 @@
 """
-Example of using the bed expansion factor from the fluidization package.
+Example of using the `fbexp()` function to calculate the bed expansion factor
+to estimate the expanded bed height and expanded void fraction of a bubbling
+fluidized bed reactor.
 """
 
 import chemics as cm

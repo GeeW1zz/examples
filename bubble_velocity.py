@@ -1,6 +1,6 @@
 """
-Example of using the bubble rise velocity function from the fluidization
-package.
+Example of using the bubble rise velocity function `ubr()` to determine the
+rise velocity of single bubbles in a fluidized bed.
 """
 
 import chemics as cm

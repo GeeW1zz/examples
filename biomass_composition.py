@@ -1,5 +1,6 @@
 """
-Example of estimating biomass composition from ultimate analysis values.
+Estimate biomass composition from ultimate analysis values. Plot results in a
+Matplotlib figure.
 """
 
 import matplotlib.pyplot as plt

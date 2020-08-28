@@ -1,5 +1,6 @@
 """
-Examples for the transport disengaging height functions.
+Estimate the transport disengaging height using the `tdh_chan()` and
+`tdh_horio()` equations.
 """
 
 import chemics as cm

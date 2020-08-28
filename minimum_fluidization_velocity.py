@@ -1,5 +1,7 @@
 """
-Comparison of minimum fluidization velocities.
+Comparison of different correlations to calculate the minimum fluidization
+velocity of particles in a fluidized bed using the `umf_coeff`, `ufm_ergun`,
+and `umf_reynolds` functions.
 """
 
 import chemics as cm

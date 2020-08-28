@@ -1,5 +1,6 @@
 """
-Examples of using the terminal velocity functions.
+Calculate the terminal velocity of a particle using the `ut()`, `ut_haider()`,
+and `ut_ganser()` functions.
 """
 
 import chemics as cm

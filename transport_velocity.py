@@ -1,5 +1,6 @@
 """
-Calculate tranport velocity for particles in a riser.
+Determine the transport velocity of particles in a circulating fluidized bed
+riser using the `utr()` function.
 """
 
 import chemics as cm

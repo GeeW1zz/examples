@@ -1,6 +1,6 @@
 """
-Examples of using the `ChemicalEquation` class to determine properties of
-reactants and products from a chemical reaction equation.
+The `ChemicalEquation` class provides product and reactant properties from a
+chemical reaction equation.
 """
 
 import chemics as cm
